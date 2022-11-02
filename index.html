@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicons/favicon-16x16.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>The Phonetic Quiz</title>
+  </head>
+  <body>
+    <section class="grid">
+      <div class="left">
+        <div class="logo">
+          <img
+            width="100%"
+            src="../pictures/logo_space.png"
+            alt="Logo Space Quiz"
+          />
+        </div>
+        <div id="text-left">
+          Try to get as many questions<br />right as you can!!
+        </div>
+        <div id="good-luck">
+          <img src="../pictures/good_luck.png" alt="Good Luck" />
+        </div>
+      </div>
+      <div class="right">
+        <div class="container">
+          <main class="tela-principal">
+            <section class="conteudos">
+              <h1>The Phonetic Quiz</h1>
+
+              <article class="centro" id="instrucoes">
+                Read the word and click on its correct pronunciation
+              </article>
+
+              <article class="questoes">
+                <header class="questao">
+                  <span id="numQuestao"></span>
+                  <h2 id="pergunta"></h2>
+                </header>
+
+                <div class="corpo">
+                  <ol type="A" id="alternativas">
+                    <li
+                      id="a"
+                      value="1A"
+                      class="respostas"
+                      onClick="verificarSeAcertou(this, this)"
+                    ></li>
+                    <li
+                      id="b"
+                      value="1B"
+                      class="respostas"
+                      onClick="verificarSeAcertou(this, this)"
+                    ></li>
+                    <li
+                      id="c"
+                      value="1C"
+                      class="respostas"
+                      onClick="verificarSeAcertou(this, this)"
+                    ></li>
+                  </ol>
+                </div>
+              </article>
+
+              <article id="aviso">
+                Questions <span id="numero"></span> of <span id="total"></span>
+              </article>
+            </section>
+
+            <footer class="centro"></footer>
+          </main>
+        </div>
+      </div>
+    </section>
+    <script src="../js/myScript.js"></script>
+  </body>
+</html>
