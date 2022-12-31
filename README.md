@@ -1,4 +1,4 @@
-# Projeto Game English
+# Project Game English
 
 ## Projeto de um quizz de inglês utilizando tecnologias Html,Css e JavaScript.
 
